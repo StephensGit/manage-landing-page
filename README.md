@@ -18,7 +18,7 @@ This is my solution to the [Manage Landing Page](https://www.frontendmentor.io/c
 
 
 ## Overview
-For this project, I build out this landing page and got it looking as close to the design as possible. The deisgn is seen in the screenshot above and inside the 'design' folder within this repo. Below contains a link to my final solution using a mobile first workflow. The project is built with semantic HTML5, CSS, CSS variables, Flexbox, and Javascsript(ES6). 
+For this project, I build out this landing page and got it looking as close to the design as possible. The design is seen in the screenshot above and inside the 'design' folder within this repo. Below contains a link to my final solution using a mobile first workflow. The project is built with semantic HTML5, CSS, CSS variables, Flexbox, and Javascsript(ES6). 
 
 
 ### Users should be able to:
