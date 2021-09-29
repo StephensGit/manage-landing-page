@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #f3603c;
+  --blue: #242d52;
+  --black: #1d1e25;
+  --light-orange: #fff0ec;
+  --light-gray: #979797;
+  --font: 'Be Vietnam';
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 24px;
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-position: left 75px top -100px, left 235px top 17%;
+  background-size: 120%, 90%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.header-img-mobile {
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Navigation */
+nav {
+  margin: 0;
+  padding: 45px 0 0 0;
+  position: relative;
+}
+
+nav > .flex-row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nav-logo {
+  width: 110px;
+  height: 18px;
+}
+
+/* Hamburger */
+.hamburger {
+  width: 25px;
+  height: 18px;
+}
+
+/* Header */
+header {
+  margin-top: 48px;
+  position: relative;
+}
+
+header::before {
+  content: '';
+  background-image: url('./images/bg-simplify-section-mobile.svg');
+  background-repeat: no-repeat;
+  /* background-position: top right; */
+  position: absolute;
+  top: 150px;
+  left: 24px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
