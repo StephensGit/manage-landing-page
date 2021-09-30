@@ -106,8 +106,12 @@
         </p>
       </div>
 
-      <div class="testimoial-item">
-        <img src="./images/avatar-richard.png" alt="avatar" />
+      <!-- <div class="flex-column testimonial-item">
+        <img
+          class="avatar-img"
+          src="./images/avatar-richard.png"
+          alt="avatar"
+        />
         <p>Richard Watts</p>
         <p>
           “Manage allows us to provide structure and process. It keeps us
@@ -116,8 +120,8 @@
         </p>
       </div>
 
-      <div class="testimoial-item">
-        <img src="./images/avatar-anisha.png" alt="avatar" />
+      <div class="flex-column testimonial-item">
+        <img class="avatar-img" src="./images/avatar-anisha.png" alt="avatar" />
         <p>Anisha Li</p>
         <p>
           “Manage has supercharged our team’s workflow. The ability to maintain
@@ -126,39 +130,51 @@
         </p>
       </div>
 
-      <div class="testimoial-item">
-        <img src="./images/avatar-shanai.png" alt="avatar" />
+      <div class="flex-column testimonial-item">
+        <img class="avatar-img" src="./images/avatar-shanai.png" alt="avatar" />
         <p>Shanai Gough</p>
         <p>
           “Their software allows us to track, manage and collaborate on our
           projects from anywhere. It keeps the whole team in-sync without being
           intrusive.”
         </p>
-      </div>
+      </div> -->
+
       <div class="radio-btn">
-        <div class="flex-row">
-          <span>1</span>
-          <span>1</span>
-          <span>1</span>
-          <span>1</span>
+        <div class="flex-row radio-btns">
+          <label class="list-item-wrapper-left flex-row align-content-center">
+            <input class="checkbox-one" type="checkbox" name="todoItem" />
+            <span class="checkmark-one"></span>
+          </label>
+          <label class="list-item-wrapper-left flex-row align-content-center">
+            <input class="checkbox-two" type="checkbox" name="todoItem" />
+            <span class="checkmark-two"></span>
+          </label>
+          <label class="list-item-wrapper-left flex-row align-content-center">
+            <input class="checkbox-three" type="checkbox" name="todoItem" />
+            <span class="checkmark-three"></span>
+          </label>
+          <label class="list-item-wrapper-left flex-row align-content-center">
+            <input class="checkbox-four" type="checkbox" name="todoItem" />
+            <span class="checkmark-four"></span>
+          </label>
         </div>
       </div>
-      <button class="btn-section-mobile">Get Started</button>
+      <button class="flex-column btn-section-mobile">Get Started</button>
     </div>
 
-    <div class="banner">
-      <div class="flex-row">
-        <h2>Simplify how your team works today.</h2>
-        <button class="btn-section-mobile">Get Started</button>
-      </div>
+    <div class="banner flex-column">
+      <h2>Simplify how your team works today.</h2>
+      <button class="btn-section-mobile-white">Get Started</button>
     </div>
+
     <footer>
       <form class="flex-row" action="">
         <input type="text" placeholder="Updates in your inbox…" />
         <button>Go</button>
       </form>
 
-      <ul>
+      <ul class="footer-ul flex-row">
         <div class="flex-column">
           <li>Home</li>
           <li>Pricing</li>
@@ -173,12 +189,32 @@
       </ul>
 
       <div class="icon-wrapper">
-        <div class="flex-row">
-          <img src="./images/icon-facebook.svg" alt="facebook-icon" />
-          <img src="./images/icon-youtube.svg" alt="youtube-icon" />
-          <img src="./images/icon-twitter.svg" alt="twitetr-icon" />
-          <img src="./images/icon-pinterest.svg" alt="pinterest-icon" />
-          <img src="./images/icon-instagram.svg" alt="instagram-icon" />
+        <div class="footer-icon-wrappers flex-row">
+          <img
+            class="footer-icons"
+            src="./images/icon-facebook.svg"
+            alt="facebook-icon"
+          />
+          <img
+            class="footer-icons"
+            src="./images/icon-youtube.svg"
+            alt="youtube-icon"
+          />
+          <img
+            class="footer-icons"
+            src="./images/icon-twitter.svg"
+            alt="twitetr-icon"
+          />
+          <img
+            class="footer-icons"
+            src="./images/icon-pinterest.svg"
+            alt="pinterest-icon"
+          />
+          <img
+            class="footer-icons"
+            src="./images/icon-instagram.svg"
+            alt="instagram-icon"
+          />
         </div>
       </div>
       <img class="logo-footer" src="./images/logo.svg" alt="logo" />
