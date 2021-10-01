@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;300;400;700;800&display=swap');
 
 * {
   margin: 0;
@@ -154,6 +154,10 @@ section .flex-column-mobile p,
   letter-spacing: 0px;
 }
 
+.section-item-main p {
+  margin: 10px 20px 50px 0px;
+}
+
 .number-btn {
   width: 67px;
   height: 45px;
@@ -290,6 +294,7 @@ input[type='checkbox'] ~ .checkmark-four {
   box-shadow: 0 4px 5px rgba(243, 96, 60, 0.5);
   margin: 30px auto 80px auto;
   justify-content: center;
+  align-items: center;
 }
 
 .btn-section-mobile-white {
@@ -324,6 +329,11 @@ input[type='checkbox'] ~ .checkmark-four {
   width: 85%;
 }
 
+form {
+  border-radius: 25px;
+  background: #ffffff;
+}
+
 footer {
   background: var(--black);
 }
@@ -350,6 +360,29 @@ footer ul li {
 }
 
 .footer-icons {
+  margin: 40px 0 40px 0;
   width: 32px;
   height: 32px;
+}
+
+.logo-wrapper {
+  justify-content: center;
+  margin: 20px 0 30px 0;
+}
+
+.logo-footer {
+  width: 131px;
+  height: 26px;
+}
+
+.copyright-text {
+  display: block;
+  font-size: 0.813rem;
+  font-weight: 100;
+  letter-spacing: -0.2px;
+  line-height: auto;
+  color: #8f8f93;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
 }
