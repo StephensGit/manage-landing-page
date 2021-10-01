@@ -211,17 +211,43 @@ section .flex-column-mobile p,
   margin-bottom: 60px;
 }
 
-/* Testimonial Item */
-.testimonial-item {
-  position: relative;
+.scroll-bar {
+  min-width: 340px;
+  min-height: 248px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.scroll-bar::webkit-scrollbar {
+  width: 0;
+}
+
+.scroll-bar .testimonial-item {
+  min-width: 326px;
+  min-height: 248px;
   align-items: center;
+  position: relative;
   background: #fafafa;
   margin: 0 24px;
 }
 
-.avatar-img {
+/* .testimonial-item-img-ali::before {
+  content: '';
+  background-image: url('/images/avatar-ali.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
   position: absolute;
   top: -36px;
+  z-index: 1;
+  overflow-y: visible !important;
+} */
+
+.avatar-img {
+  position: absolute;
+  z-index: 2;
+  margin-top: -36px;
   width: 72px;
   height: 72px;
 }
@@ -235,11 +261,11 @@ section .flex-column-mobile p,
 }
 
 .testimonial-item :nth-child(3) {
-  font-size: 0.875;
+  font-size: 0.875rem;
   color: var(--blue);
   opacity: 0.5;
   line-height: 26px;
-  padding: 0 30px 30px 30px;
+  padding: 0 15px 30px 15px;
   font-weight: 400;
   align-content: center;
   text-align: center;
@@ -330,8 +356,38 @@ input[type='checkbox'] ~ .checkmark-four {
 }
 
 form {
+  padding-top: 50px;
+  /* border-radius: 25px; */
+  /* background: #ffffff; */
+}
+
+.email-btn {
+  cursor: pointer;
+  width: 80px;
+  height: 44px;
+  color: #ffffff;
+  font-size: 0.813rem;
   border-radius: 25px;
+  background: var(--orange);
+  border: none;
+  margin-left: 10px;
+}
+
+.email-btn:hover {
+  background: #f98f75;
+}
+
+.email-input {
+  width: 239px;
+  height: 44px;
   background: #ffffff;
+  border-radius: 25px;
+  border: none;
+  color: #8d8d8d;
+  font-size: 0.813rem;
+  font-weight: 200;
+  letter-spacing: -0.1px;
+  padding-left: 20px;
 }
 
 footer {
@@ -340,6 +396,7 @@ footer {
 
 .footer-ul {
   justify-content: space-around;
+  margin-top: 10px;
 }
 
 footer ul li:first-child {
