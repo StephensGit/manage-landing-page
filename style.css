@@ -211,27 +211,37 @@ section .flex-column-mobile p,
   margin-bottom: 60px;
 }
 
-.scroll-bar {
-  min-width: 340px;
-  min-height: 248px;
-  display: flex;
-  overflow-x: auto;
-}
-
-.scroll-bar::webkit-scrollbar {
-  width: 0;
-}
-
-.scroll-bar .testimonial-item {
-  min-width: 326px;
+.testimonial-item {
+  position: relative;
+  /* min-width: 340px; */
   min-height: 248px;
   align-items: center;
   position: relative;
   background: #fafafa;
   margin: 0 24px;
 }
+/* .scroll-bar {
+  position: relative;
+  min-width: 340px;
+  min-height: 248px;
+  display: flex;
+  overflow-x: auto;
+} */
 
-/* .testimonial-item-img-ali::before {
+/* .scroll-bar::webkit-scrollbar {
+  width: 0;
+} */
+
+/* .scroll-bar .testimonial-item {
+  min-width: 326px;
+  min-height: 248px;
+  align-items: center;
+  position: relative;
+  background: #fafafa;
+  margin: 0 24px;
+} */
+
+/* .scroll-bar::before {
   content: '';
   background-image: url('/images/avatar-ali.png');
   background-size: cover;
@@ -240,13 +250,12 @@ section .flex-column-mobile p,
   height: 72px;
   position: absolute;
   top: -36px;
-  z-index: 1;
+  z-index: 99;
   overflow-y: visible !important;
 } */
 
 .avatar-img {
   position: absolute;
-  z-index: 2;
   margin-top: -36px;
   width: 72px;
   height: 72px;
@@ -357,8 +366,7 @@ input[type='checkbox'] ~ .checkmark-four {
 
 form {
   padding-top: 50px;
-  /* border-radius: 25px; */
-  /* background: #ffffff; */
+  justify-content: center;
 }
 
 .email-btn {
