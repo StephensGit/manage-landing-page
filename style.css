@@ -4,14 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Change the white to any color ;) */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px red inset !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
