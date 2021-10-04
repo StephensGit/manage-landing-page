@@ -1,7 +1,13 @@
+// Input checkboxes
 let checkboxOne = document.querySelector('#checkbox-one');
 let checkboxTwo = document.querySelector('#checkbox-two');
 let checkboxThree = document.querySelector('#checkbox-three');
 let checkboxFour = document.querySelector('#checkbox-four');
+// Checkbox span - for styling
+let checkboxOneTicked = document.querySelector('.checkmark-one');
+let checkboxTwoTicked = document.querySelector('.checkmark-two');
+let checkboxThreeTicked = document.querySelector('.checkmark-three');
+let checkboxFourTicked = document.querySelector('.checkmark-four');
 
 const form = document.querySelector('form');
 const errorMessageWrapper = document.querySelector('.error-msg-wrapper');
@@ -9,24 +15,53 @@ const errorMessageWrapper = document.querySelector('.error-msg-wrapper');
 let testimonial = document.querySelector('.testimonial-item');
 let testimonialItem = document.querySelector('#testimonials div');
 
+// Function to remove class if another box is checked
+const uncheckBox = (checkboxNum) => {
+  checkboxNum.classList.remove('my-style');
+};
+
 // click button
 checkboxOne.addEventListener('click', () => {
-  testimonialItem.classList.toggle('.testimonial-item-clicked');
+  if (checkboxOne.checked) {
+    checkboxOneTicked.classList.add('my-style');
+    checkboxTwoTicked.classList.remove('my-style');
+    checkboxThreeTicked.classList.remove('my-style');
+    checkboxFourTicked.classList.remove('my-style');
+  }
 
+  testimonialItem.classList.toggle('.testimonial-item-clicked');
   changeTestimonial(testimonialOne());
 });
 
 checkboxTwo.addEventListener('click', () => {
+  if (checkboxTwo.checked) {
+    checkboxTwoTicked.classList.toggle('my-style');
+    checkboxOneTicked.classList.remove('my-style');
+    checkboxThreeTicked.classList.remove('my-style');
+    checkboxFourTicked.classList.remove('my-style');
+  }
   testimonialItem.classList.toggle('.testimonial-item-clicked');
   changeTestimonial(testimonialTwo());
 });
 
 checkboxThree.addEventListener('click', () => {
+  if (checkboxThree.checked) {
+    checkboxThreeTicked.classList.toggle('my-style');
+    checkboxOneTicked.classList.remove('my-style');
+    checkboxTwoTicked.classList.remove('my-style');
+    checkboxFourTicked.classList.remove('my-style');
+  }
   testimonialItem.classList.toggle('.testimonial-item-clicked');
   changeTestimonial(testimonialThree());
 });
 
 checkboxFour.addEventListener('click', () => {
+  if (checkboxFour.checked) {
+    checkboxFourTicked.classList.toggle('my-style');
+    checkboxOneTicked.classList.remove('my-style');
+    checkboxTwoTicked.classList.remove('my-style');
+    checkboxThreeTicked.classList.remove('my-style');
+  }
   testimonialItem.classList.toggle('.testimonial-item-clicked');
   changeTestimonial(testimonialFour());
 });
@@ -120,6 +155,7 @@ form.addEventListener('submit', (e) => {
 });
 
 window.addEventListener('load', () => {
+  checkboxOneTicked.classList.add('my-style');
   testimonial.innerHTML = ``;
   testimonial.innerHTML = `
     <img class="avatar-img" src="./images/avatar-ali.png" alt="avatar" />
