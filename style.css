@@ -413,6 +413,12 @@ form {
   padding-left: 20px;
 }
 
+.email-input:focus {
+  /* input:focus, textarea:focus, select:focus{ */
+  outline: none;
+  /* } */
+}
+
 footer {
   background: var(--black);
 }
