@@ -306,10 +306,10 @@ label {
   height: 12px;
 }
 
-input[type='checkbox'] ~ .checkmark-one,
-input[type='checkbox'] ~ .checkmark-two,
-input[type='checkbox'] ~ .checkmark-three,
-input[type='checkbox'] ~ .checkmark-four {
+input[type='radio'] ~ .checkmark-one,
+input[type='radio'] ~ .checkmark-two,
+input[type='radio'] ~ .checkmark-three,
+input[type='radio'] ~ .checkmark-four {
   border: 1px solid var(--orange);
   border-radius: 50%;
 }
@@ -320,6 +320,10 @@ input[type='checkbox'] ~ .checkmark-four {
 .checkmark-four {
   height: 12px;
   width: 12px;
+}
+
+.my-style {
+  background: var(--orange);
 }
 
 .btn-section-mobile {
