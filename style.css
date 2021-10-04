@@ -375,6 +375,15 @@ form {
   justify-content: center;
 }
 
+.error-msg {
+  /* display: none; */
+  padding: 5px 0 0 20px;
+  font-style: italic;
+  font-size: 10px;
+  color: #f33c3c;
+  transition: color 0.5 ease-in;
+}
+
 .email-btn {
   cursor: pointer;
   width: 80px;
@@ -418,6 +427,7 @@ footer ul li:first-child {
 }
 
 footer ul li {
+  cursor: pointer;
   color: #ffffff;
   list-style-type: none;
   font-weight: 200;
@@ -426,14 +436,49 @@ footer ul li {
   padding-bottom: 10px;
 }
 
+footer ul li:hover {
+  color: var(--orange);
+}
+
 .footer-icon-wrapper {
   justify-content: space-evenly;
 }
 
+.icon-wrapper-individual {
+  position: relative;
+}
+
 .footer-icons {
+  cursor: pointer;
   margin: 40px 0 40px 0;
   width: 32px;
   height: 32px;
+}
+
+.facebook-icon-white,
+.instagram-icon-white,
+.twitter-icon-white,
+.youtube-icon-white,
+.pinterest-icon-white {
+  position: relative;
+  opacity: 1;
+}
+
+.facebook-icon-white:hover,
+.instagram-icon-white:hover,
+.twitter-icon-white:hover,
+.youtube-icon-white:hover,
+.pinterest-icon-white:hover {
+  position: relative;
+  opacity: 0;
+}
+
+.facebook-icon-orange,
+.instagram-icon-orange,
+.twitter-icon-orange,
+.youtube-icon-orange,
+.pinterest-icon-orange {
+  position: absolute;
 }
 
 .logo-wrapper {

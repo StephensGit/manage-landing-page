@@ -3,12 +3,16 @@ let checkboxTwo = document.querySelector('#checkbox-two');
 let checkboxThree = document.querySelector('#checkbox-three');
 let checkboxFour = document.querySelector('#checkbox-four');
 
+const form = document.querySelector('form');
+const errorMessageWrapper = document.querySelector('.error-msg-wrapper');
+
 let testimonial = document.querySelector('.testimonial-item');
 let testimonialItem = document.querySelector('#testimonials div');
 
 // click button
 checkboxOne.addEventListener('click', () => {
   testimonialItem.classList.toggle('.testimonial-item-clicked');
+
   changeTestimonial(testimonialOne());
 });
 
@@ -90,6 +94,30 @@ const changeTestimonial = (testimonialItem) => {
   testimonial.innerHTML = ``;
   testimonial.innerHTML = testimonialItem;
 };
+
+// Update UI with error message if email length is 0
+const displayError = (email) => {
+  if (email.length === 0) {
+    errorMessageWrapper.innerHTML = `
+    <span class="error-msg">Please insert a valid email</span>`;
+  } else {
+    errorMessageWrapper.innerHTML = ``;
+  }
+};
+
+form.addEventListener('submit', (e) => {
+  // prevent default action
+  e.preventDefault();
+
+  // get email value from form
+  const email = form.email.value.trim();
+
+  // update the ui with error message if no email
+  displayError(email);
+
+  // reset form
+  form.reset();
+});
 
 window.addEventListener('load', () => {
   testimonial.innerHTML = ``;
