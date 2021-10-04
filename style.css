@@ -417,6 +417,7 @@ form {
   padding-left: 20px;
 }
 
+input:focus,
 .email-input:focus {
   /* input:focus, textarea:focus, select:focus{ */
   outline: none;
