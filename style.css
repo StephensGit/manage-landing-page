@@ -217,9 +217,15 @@ section .flex-column-mobile p,
   min-height: 248px;
   align-items: center;
   position: relative;
-  background: #fafafa;
+  background-color: #fafafa;
   margin: 0 24px;
+  transition: background-color 0.5s ease-out;
 }
+
+.testimonial-item-clicked {
+  background-color: red !important;
+}
+
 /* .scroll-bar {
   position: relative;
   min-width: 340px;
