@@ -93,14 +93,14 @@ nav > .flex-row {
   position: absolute;
   z-index: 1;
   top: 103px;
-  left: 24px;
-  width: 326px;
+  /* left: 24px; */
+  width: 86%;
   height: 291px;
   background: #ffffff;
   /* margin: 0 auto; */
-  top: 30%;
+  /* top: 40%; */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
 }
 
 .show-modal {
