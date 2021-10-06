@@ -41,7 +41,6 @@ window.addEventListener('click', (event) => {
     modal.style.display = 'none';
     modalBackground.classList.remove('modal-bg');
   }
-  return;
 });
 
 // Function to remove class if another box is checked
