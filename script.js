@@ -3,17 +3,60 @@ let checkboxOne = document.querySelector('#checkbox-one');
 let checkboxTwo = document.querySelector('#checkbox-two');
 let checkboxThree = document.querySelector('#checkbox-three');
 let checkboxFour = document.querySelector('#checkbox-four');
+
 // Checkbox span - for styling
 let checkboxOneTicked = document.querySelector('.checkmark-one');
 let checkboxTwoTicked = document.querySelector('.checkmark-two');
 let checkboxThreeTicked = document.querySelector('.checkmark-three');
 let checkboxFourTicked = document.querySelector('.checkmark-four');
 
+// Modal
+let modal = document.querySelector('#modal');
+let ul = document.querySelector('ul');
+// Modal Background
+let modalBackground = document.querySelector('#modal-bg');
+// Get the button that opens the modal
+let openModal = document.getElementById('hamurger-icon');
+
+// Form
 const form = document.querySelector('form');
 const errorMessageWrapper = document.querySelector('.error-msg-wrapper');
 
+// Testimonials
 let testimonial = document.querySelector('.testimonial-item');
 let testimonialItem = document.querySelector('#testimonials div');
+
+// When the user clicks the button, open the modal
+openModal.addEventListener('click', () => {
+  modal.classList.add('show-modal');
+  modalBackground.classList.add('modal-bg');
+  modal.style.display = 'block';
+  // modalBackground.classList.toggle('modal-bg');
+});
+
+// When the user clicks anywhere outside of the modal, close it
+// modalBackground.addEventListener('click', (event) => {
+//   if (event.target == modal) {
+//     console.log(event.target);
+//     modal.style.display = 'none';
+//     modalBackground.classList.remove('modal-bg');
+//   }
+// });
+// window.onclick = function (event) {
+//   if (event.target !== modal) {
+//     console.log(event.target);
+//     modal.style.display = 'none';
+//     modalBackground.classList.remove('modal-bg');
+//   }
+// };
+window.onclick = function (event) {
+  //alert(event.target)`enter code here`
+  console.log(event.target);
+  if (event.target == ul) {
+    modal.style.display = 'none';
+    modalBackground.classList.remove('modal-bg');
+  }
+};
 
 // Function to remove class if another box is checked
 const uncheckBox = (checkboxNum) => {
