@@ -97,7 +97,10 @@ nav > .flex-row {
   width: 326px;
   height: 291px;
   background: #ffffff;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .show-modal {
