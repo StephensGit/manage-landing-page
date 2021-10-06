@@ -13,6 +13,7 @@ let checkboxFourTicked = document.querySelector('.checkmark-four');
 // Modal
 let modal = document.querySelector('#modal');
 let ul = document.querySelector('ul');
+
 // Modal Background
 let modalBackground = document.querySelector('#modal-bg');
 // Get the button that opens the modal
@@ -31,32 +32,17 @@ openModal.addEventListener('click', () => {
   modal.classList.add('show-modal');
   modalBackground.classList.add('modal-bg');
   modal.style.display = 'block';
-  // modalBackground.classList.toggle('modal-bg');
 });
 
-// When the user clicks anywhere outside of the modal, close it
-// modalBackground.addEventListener('click', (event) => {
-//   if (event.target == modal) {
-//     console.log(event.target);
-//     modal.style.display = 'none';
-//     modalBackground.classList.remove('modal-bg');
-//   }
-// });
-// window.onclick = function (event) {
-//   if (event.target !== modal) {
-//     console.log(event.target);
-//     modal.style.display = 'none';
-//     modalBackground.classList.remove('modal-bg');
-//   }
-// };
-window.onclick = function (event) {
-  //alert(event.target)`enter code here`
+window.addEventListener('click', (event) => {
   console.log(event.target);
-  if (event.target == ul) {
+  if (event.target !== openModal && event.target !== ul) {
+    console.log(event.target);
     modal.style.display = 'none';
     modalBackground.classList.remove('modal-bg');
   }
-};
+  return;
+});
 
 // Function to remove class if another box is checked
 const uncheckBox = (checkboxNum) => {
